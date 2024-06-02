@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+footer {
+  background-color: lightblue;
+  padding: 1rem;
+  text-align: center;
+}
+.navbar{
+ .navbar-brand{
+  img{
+    width:15%;
+  }
+ }
+}
+.icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+.phoneNumber{
+  cursor: pointer;
+}
+:root {
+  --main-bg-color: #282c34;
+  --text-color: #e8e8e8;
+  --btn-bg: #4caf50;
+  --hover-effect: #1f618d;
+  --Highlights: #61dafb;
+}
+.text-react{
+  color: #61dafb;
+  font-size: xx-large;
+  font-weight: 900;
+}
+.main-bg-color{
+  background-color: var(--main-bg-color);
+}
+.home .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--text-color);
+}
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../src/images/download.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn:hover {
+  background-color: var(--hover-effect);
+}
+.navbar-nav .nav-link.active{
+  color: var(--Highlights) !important;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  color: var(--Highlights) !important;
+}
+.profile{
+  width: 300px;
+  height: 300px;
+}
+.name{
+  color: var(--Highlights);
+}
+.layer{
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../src/images/tifa4.jpg);
+  margin: auto;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* about */
+.about{
+  background-color: var(--main-bg-color);
+}
+.about .about-img::after{
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  z-index: -1;
+  background-image: url(../src/images/dots.png);
+  bottom: -30px;
+  left: 0;
+  background-repeat: repeat;
+}
+.about .about-img{
+  padding-left: 30px;
+}
+.progress-bar::after{
+  content: attr(data-value); 
+  position: absolute;
+  right: 10px;
+}
+.about span{
+  color: var(--Highlights);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.section-heading::after{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  left: 25%;
+  background-color: var(--text-color);
+
+}
+.section-heading{
+  color: var(--Highlights);
+}
+.btn-Cv{
+  background-color: var(--btn-bg);
+  padding: 10px 30px;
+}
+
+
+/* projects */
+
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-slide h1 {
+  color: var(--Highlights);
+}
+.swiper-slide p,
+.swiper-slide span{
+  color: var(--text-color);
+}
+.w-10{
+  width: 10%;
+}
+.navbar{
+  transition: all 1s;
+}
+.custom-pointer {
+  position: fixed;
+  pointer-events: none; /* Ensures the pointer does not interfere with mouse events */
+  z-index: 9999; /* Ensures the pointer is above other elements */
+  transform: translate(-50%, -50%);
+}
+
+.custom-pointer span {
+  font-size: 24px;
+}
+
+@media (max-width: 992px) {
+  .home {
+    height: 100% !important;
+    padding: 50px 0 ;
+    /* Add more responsive styles as needed */
+  }
+
+  /* Adjust other styles for smaller screens */
+}

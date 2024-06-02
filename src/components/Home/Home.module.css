@@ -1,0 +1,15 @@
+@keyframes moveBox {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(300px);
+    }
+  }
+  
+  .animated-box {
+    width: 50px;
+    height: 100vh;
+    background-color: red;
+    animation: moveBox 2s infinite alternate;
+  }
