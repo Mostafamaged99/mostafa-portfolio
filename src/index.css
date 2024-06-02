@@ -104,7 +104,7 @@ ul {
 
 /* about */
 .about{
-  background-color: var(--main-bg-color);
+  background-color: #0a101e;
 }
 .about .about-img::after{
   content: "";
@@ -188,4 +188,8 @@ ul {
   }
 
   /* Adjust other styles for smaller screens */
+}
+
+.projects, .spinner{
+  background-color:   #0a101e;
 }

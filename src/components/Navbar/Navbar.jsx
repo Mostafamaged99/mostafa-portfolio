@@ -32,7 +32,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg  fixed-top" style={{ backgroundColor: navbarBg }}>
         <div className="container">
           <NavLink className="navbar-brand w-25" to="/">
-            <img src={logo} alt="logo" className="w-25 rounded-circle"/>
+            <h2 className="h1 text-white fw-bolder">Mostafa</h2>
           </NavLink>
           <button
             className="navbar-toggler"
