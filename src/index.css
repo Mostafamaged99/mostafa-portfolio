@@ -186,6 +186,13 @@ ul {
     padding: 50px 0 ;
     /* Add more responsive styles as needed */
   }
+  .about {
+    width: 100% !important;
+    /* Add more responsive styles as needed */
+  }
+  .swiper-slide-text button{
+    width: 100% !important;
+  }
 
   /* Adjust other styles for smaller screens */
 }

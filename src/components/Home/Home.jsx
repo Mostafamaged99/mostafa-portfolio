@@ -75,7 +75,7 @@ export default function Home() {
 
             <div
               className="icons  d-flex justify-content-center"
-              // data-aos="fade-down"
+              // data-aos="fade-up"
             >
               <ul className="d-flex">
                 <li className="mx-3">
