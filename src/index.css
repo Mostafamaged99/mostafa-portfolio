@@ -187,7 +187,7 @@ ul {
     /* Add more responsive styles as needed */
   }
   .about {
-    width: 100% !important;
+    width: fit-content!important;
     background-color:   #0a101e !important;
     /* Add more responsive styles as needed */
   }
