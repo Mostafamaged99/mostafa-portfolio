@@ -3,33 +3,35 @@ import logo from "../../images/2.png";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
-
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [navbarBg, setNavbarBg] = useState('transparent');
+  const [navbarBg, setNavbarBg] = useState("transparent");
 
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
       setScrollPosition(position);
-      
+
       // Example condition to change navbar bg color
       if (position > 100) {
-        setNavbarBg('black'); // Change this to whatever color you want
+        setNavbarBg("black"); // Change this to whatever color you want
       } else {
-        setNavbarBg('transparent');
+        setNavbarBg("transparent");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []); //
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg  fixed-top" style={{ backgroundColor: navbarBg }}>
+      <nav
+        className="navbar navbar-expand-lg  fixed-top"
+        style={{ backgroundColor: navbarBg }}
+      >
         <div className="container">
           <NavLink className="navbar-brand w-25" to="/">
             <h2 className="h1 text-white fw-bolder">Mostafa</h2>
@@ -48,28 +50,45 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2  mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-link  text-white mx-5" aria-current="page" to="/home">
+                <NavLink
+                  className="nav-link  text-white mx-5"
+                  aria-current="page"
+                  to="/home"
+                >
                   HOME
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link  text-white mx-5" aria-current="page" to="/about">
+                <NavLink
+                  className="nav-link  text-white mx-5"
+                  aria-current="page"
+                  to="/about"
+                >
                   ABOUT
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link  text-white mx-5" aria-current="page" to="/projects">
+                <NavLink
+                  className="nav-link  text-white mx-5"
+                  aria-current="page"
+                  to="/projects"
+                >
                   PROJECTS
                 </NavLink>
               </li>
               <li className="nav-item ">
-                <span
+                <NavLink
                   className="phoneNumber nav-link  cursor-pointer text-white mx-5"
                   aria-current="page"
+                  to="tel:+201121197663"
+                  target="_blank"
                 >
                   <span className="me-5">|</span>{" "}
+                  <NavLink to="https://wa.me/201121197663" target="_blank">
+                    <i class="fa-brands fa-whatsapp me-5 fs-5"></i>
+                  </NavLink>
                   <i class="fa-solid fa-phone mx-2"></i> +201121197663
-                </span>
+                </NavLink>
               </li>
             </ul>
           </div>

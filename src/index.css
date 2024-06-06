@@ -93,8 +93,8 @@ ul {
 .layer{
   width: 300px;
   height: 300px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../src/images/tifa4.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url(../src/images/sasa2.jpg);
   margin: auto;
   border-radius: 50%;
   background-position: center center;
@@ -188,6 +188,7 @@ ul {
   }
   .about {
     width: 100% !important;
+    background-color:   #0a101e !important;
     /* Add more responsive styles as needed */
   }
   .swiper-slide-text button{

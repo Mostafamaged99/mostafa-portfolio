@@ -29,7 +29,7 @@ export default function Home() {
     ) {
       $(".home").ripples({
         resolution: 512,
-        dropRadius: 20,
+        dropRadius: 5,
         perturbance: 0.04,
       });
     }
@@ -52,7 +52,7 @@ export default function Home() {
           <span
             role="img"
             aria-label="pointer"
-            className="fs-1 text-react fw-bolder"
+            className=" text-react"
           >
             <i className="fa-solid fa-hand-pointer"></i>
           </span>

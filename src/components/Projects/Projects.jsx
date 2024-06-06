@@ -27,7 +27,7 @@ export default function Projects() {
     dots: true,
     fade: true,
     infinite: true,
-    speed: 1000,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     waitForAnimate: false,
