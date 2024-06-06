@@ -83,13 +83,13 @@ export default function About() {
                       src={aboutPic}
                       alt="hero"
                       className="w-100 position-relative rounded-5 "
-                      data-aos="fade-right"
+                       data-aos="fade-up"
                     />
                   </div>
                 </div>
                 <div
                   className="col-md-7 py-5 d-flex align-items-center"
-                  data-aos="fade-left"
+                   data-aos="fade-up"
                 >
                   <div className="about-text">
                     <h3 className="bolder color-heading text-white">
