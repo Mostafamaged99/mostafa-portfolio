@@ -46,7 +46,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="app" onMouseMove={handleMouseMove}>
+      <div className="app" onMouseMove={handleMouseMove} >
         <div className="custom-pointer" style={{ left: mouseX, top: mouseY }}>
           {/* Custom pointer content */}
           <span
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
         <Navbar />
         {/* {!loading && ( */}
-        <div className="home d-flex justify-content-center align-items-center vh-100 text-white">
+        <div className="home d-flex justify-content-center align-items-center vh-100 text-white overflow={hidden}">
           <div className="home-text text-center container">
             <div className="layer" data-aos="fade-down"></div>
             <h1 className="fw-bolder my-3" data-aos="fade-down">

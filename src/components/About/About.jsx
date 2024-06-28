@@ -67,7 +67,7 @@ export default function About() {
           <Navbar />
           <section
             id="About"
-            className="about py-5 d-flex align-items-center  "
+            className="about py-5 d-flex align-items-center overflow={hidden} "
           >
             <div className="container py-5">
               <div className="section-heading position-relative text-center mt-5">

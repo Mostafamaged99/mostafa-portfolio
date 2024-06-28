@@ -9,6 +9,7 @@ import book from "../../images/bookmark.png";
 import qoutes from "../../images/quote.gif";
 import hero from "../../images/hero.jpg";
 import mealify from "../../images/mealify.png";
+import notes from "../../images/notesInfo.png";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -81,13 +82,13 @@ export default function Projects() {
             <span
               role="img"
               aria-label="pointer"
-              className="text-react fw-bolder fs-1"
+              className="text-react fw-bolder "
             >
               <i class="fa-solid fa-hand-pointer"></i>
             </span>
           </div>
           <Navbar />
-          <section className="projects  py-5 p-0 m-0">
+          <section className="projects  py-5 p-0 m-0 overflow={hidden}">
             <div className="container pt-5 ">
               <div className="section-heading position-relative text-center pt-5">
                 <h3 className=" fw-bold h1 " data-aos="fade-down">
@@ -140,6 +141,57 @@ export default function Projects() {
                         <button className="btn checkBtn w-25 mt-3 fw-bold">
                           <Link
                             to="https://routecart.netlify.app/"
+                            target="_blank"
+                          >
+                            Check it here!
+                          </Link>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      data-aos="fade-right"
+                      className="w-10 mx-auto mt-5"
+                      src={notes}
+                      alt="notes app project"
+                    />
+                    <div className="swiper-slide text-center">
+                      <div className="swiper-slide-text">
+                        <h1 className="fw-bold pb-3" data-aos="fade-right">
+                          Notes App
+                        </h1>
+                        <p
+                          data-aos="fade-left"
+                          className="h4 fw-medium text-secondary  my-3 text-start lh-base"
+                        >
+                          <span className="h3 fw-bolder">Description: </span>
+                          Welcome to QuickNotes, your intuitive and sleek
+                          note-taking solution! Designed with productivity in
+                          mind, QuickNotes offers a minimalist interface built
+                          with React.js. Enjoy real-time updates and seamless
+                          cross-device use, making note-taking effortless and
+                          efficient.
+                        </p>
+                        <p
+                          data-aos="fade-left"
+                          className="h4 fw-medium text-secondary  text-start lh-base"
+                        >
+                          <span className="h3 fw-bolder">
+                            Features &amp; Tecnologies:{" "}
+                          </span>
+                          HTML5 &amp; CSS &amp; Bootstrap &amp; React Framework
+                          &amp; React js &amp; Recoil &amp; React-router-dom
+                          &amp; React hooks( useState, useNavigate and
+                          useEffect) &amp; Useformik &amp; React-bootstrap &amp;
+                          Authentication &amp; Authorization &amp; API Data
+                          Handling (GET, DELETE, PUT, POST) &amp; User-Friendly
+                          Forms.
+                        </p>
+                        <button className="btn checkBtn w-25 mt-3 fw-bold">
+                          <Link
+                            to="https://quicknotes-app.netlify.app/"
                             target="_blank"
                           >
                             Check it here!
