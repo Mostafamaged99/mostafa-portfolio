@@ -204,3 +204,7 @@ ul {
 .projects, .spinner{
   background-color:   #0a101e;
 }
+
+.w-5{
+  width: 5%;
+}

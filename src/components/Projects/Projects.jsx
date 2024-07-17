@@ -10,6 +10,7 @@ import qoutes from "../../images/quote.gif";
 import hero from "../../images/hero.jpg";
 import mealify from "../../images/mealify.png";
 import notes from "../../images/notesInfo.png";
+import light from "../../images/light.svg";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -141,6 +142,56 @@ export default function Projects() {
                         <button className="btn checkBtn w-25 mt-3 fw-bold">
                           <Link
                             to="https://routecart.netlify.app/"
+                            target="_blank"
+                          >
+                            Check it here!
+                          </Link>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img
+                      data-aos="fade-right"
+                      className="w-5 mx-auto mt-5"
+                      src={light}
+                      alt="transaction project"
+                    />
+                    <div className="swiper-slide text-center">
+                      <div className="swiper-slide-text">
+                        <h1 className="fw-bold pb-3" data-aos="fade-right">
+                          Customer Transactions Manager
+                        </h1>
+                        <p
+                          data-aos="fade-left"
+                          className="h4 fw-medium text-secondary  my-3 text-start lh-base"
+                        >
+                          <span className="h3 fw-bolder">Description: </span>A
+                          dynamic web app built with React! Featuring an
+                          interactive customer table with filtering, sorting,
+                          and graph visualization of transaction data per day.
+                          Responsive design and smooth animations ensure a
+                          seamless user experience. Built using React, Axios for
+                          API requests, PrimeReact for UI components, and
+                          Chart.js for dynamic data visualization.
+                        </p>
+                        <p
+                          data-aos="fade-left"
+                          className="h4 fw-medium text-secondary  text-start lh-base"
+                        >
+                          <span className="h3 fw-bolder">
+                            Features &amp; Tecnologies:{" "}
+                          </span>
+                          HTML5 &amp; CSS &amp; Bootstrap &amp; React Framework
+                          &amp; PrimeReact &amp;Chart js &amp; React js &amp;
+                          React-router-dom &amp; React hooks( useState,
+                          useEffect) &amp; React-bootstrap &amp; User-Friendly
+                          Forms.
+                        </p>
+                        <button className="btn checkBtn w-25 mt-3 fw-bold">
+                          <Link
+                            to="https://customer-transaction.netlify.app/"
                             target="_blank"
                           >
                             Check it here!
