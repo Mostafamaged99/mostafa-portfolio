@@ -98,7 +98,7 @@ export default function Home() {
                 </li>
                 <li className="mx-3">
                   <a
-                    href="https://drive.google.com/file/d/1JsmdKb1fTkkFqeLk6_JoJ0OgZ_dwvkkc/view"
+                    href="https://drive.google.com/file/d/1pFyEsTEe0y5XwqPhNfyrhEBLdJrM1fRH/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
